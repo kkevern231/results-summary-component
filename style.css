@@ -324,16 +324,30 @@
 
   .continue {
     border-radius: 2rem;
-    background-color: hsla(241, 32%, 34%, 0.982);
-    color: white;
+    background-color: #fff607;
+    color: black;
     align-self: center;
     margin-top: 1rem;
     margin: 1rem;
     width: 17rem;
     padding: 0.75rem;
+    transition: background-color 1s ease-in;
   }
 
   .continue:hover {
     cursor: pointer;
+    background-color: #f2af0a;
+    transition-timing-function: 1s ease-out;
+    animation: bounce 0.8s;
+  }
+
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-0.2rem);
+    }
   }
 }
