@@ -304,8 +304,8 @@
     color: hsl(234, 85%, 45%);
     background-color: hsla(234, 85%, 45%, 0.146);
     border-radius: 0.4rem;
+    flex: 1;
   }
-
   .summary-score {
     max-width: fit-content;
     margin-top: -1.1rem;
